@@ -39,6 +39,28 @@ function daysUntilWeekend(day){
   }
 }
 
+function checkVegetablePrice(vegetable){
+  let veggie = vegetable.toLowerCase();
+  switch(veggie){
+    case "carrots":
+      console.log("Price for carrots is 0.99£/kg")
+      break;
+    case "potatoes":
+      console.log("Price for potatoes is 0.99£/kg")
+      break;
+    case "brocolli":
+      console.log("Price for brocolli is 1.20£/kg")
+      break;
+    case "cabbage":
+      console.log("Price for Cabbage is 1.10£/kg")
+      break;
+    case "asparagus":
+      console.log("Price for asparagus is 0.50£/kg")
+      break;
+  }
+}
+
 checkPositiveOrNegative(-4);
 checkGreatedNumber(-1,-4,-10)
 daysUntilWeekend("Friday");
+checkVegetablePrice("Brocolli");

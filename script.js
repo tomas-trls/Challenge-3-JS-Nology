@@ -44,21 +44,33 @@ function checkVegetablePrice(vegetable){
   switch(veggie){
     case "carrots":
       console.log("Price for carrots is 0.99£/kg")
-      break;
+      return 0.99;
     case "potatoes":
       console.log("Price for potatoes is 0.99£/kg")
-      break;
+      return 0.99;
     case "brocolli":
       console.log("Price for brocolli is 1.20£/kg")
-      break;
+      return 2.25;
     case "cabbage":
       console.log("Price for Cabbage is 1.10£/kg")
-      break;
+      return 3.99;
     case "asparagus":
       console.log("Price for asparagus is 0.50£/kg")
-      break;
+      return 1.99;
   }
 }
+
+
+function showPrice() {
+  // Get the selected vegetable
+  var vegetable = document.getElementById("vegetable-select").value;
+
+  // Get the price for the selected vegetable
+  var price = checkVegetablePrice(vegetable);
+
+  // Show the price in an alert box
+  alert(`The price of ${vegetable} is ${price} per kg.`);
+  }
 
 checkPositiveOrNegative(-4);
 checkGreatedNumber(-1,-4,-10)
